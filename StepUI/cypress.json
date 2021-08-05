@@ -1,0 +1,10 @@
+{
+   
+    "defaultCommandTimeout": 8000,
+    "chromeWebSecurity": false,
+    "baseUrl": "https://step-stg.internal.smd.js-devops.co.uk",
+    "experimentalSourceRewriting": true,
+    "pageLoadTimeout": 100000,
+    "username": "emilia",
+    "password": "emilia"
+}

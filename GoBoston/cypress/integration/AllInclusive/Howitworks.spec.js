@@ -1,0 +1,15 @@
+describe("AllInclusive test", () => {
+    it("How it works", () => {
+        cy.visit('')
+        cy.get("#block-secondarylinks > div > div > div > div > div > ul > li:nth-child(2) > a").click({force: true})
+        cy.wait(3000)
+        cy.get("body > div.dialog-off-canvas-main-canvas > div > main > div > div > div > div > div > section.block.block-go-pass-product.block-pass-product-how-it-works-steps.clearfix.block-wrapper > div > div > div > div > div.title > h2").contains("How the Go Boston pass works")
+        cy.wait(3000)
+        cy.get("body > div.dialog-off-canvas-main-canvas > div > main > div > div > div > div > div > section.block.block-go-pass-product.block-pass-product-how-it-works-steps.clearfix.block-wrapper > div > div > div > div > div.steps > ol > li:nth-child(1) > span").contains("Pick the pass that's right for you")
+        cy.wait(3000)
+        cy.get("body > div.dialog-off-canvas-main-canvas > div > main > div > div > div > div > div > section.block.block-go-pass-product.block-pass-product-how-it-works-steps.clearfix.block-wrapper > div > div > div > div > div.steps > ol > li:nth-child(2) > span").contains("Download directly to your smartphone or print at home")
+        cy.wait(3000)
+        cy.get("body > div.dialog-off-canvas-main-canvas > div > main > div > div > div > div > div > section.block.block-go-pass-product.block-pass-product-how-it-works-steps.clearfix.block-wrapper > div > div > div > div > div.steps > ol > li:nth-child(3) > span").contains("Show your pass at each attraction to be scanned for admission")
+        cy.wait(3000)
+    })
+})
